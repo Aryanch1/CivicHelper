@@ -19,4 +19,4 @@ export const API_BASE = (process.env.EXPO_PUBLIC_API_URL ?? '').trim().replace(/
  * config. No project exists yet (2026-11-18) — wiring is a publish
  * step; until then the app runs in full local/guest mode.
  */
-export const firebaseConfigured = false;
+export const firebaseConfigured = true;
