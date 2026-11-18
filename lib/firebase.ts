@@ -29,16 +29,16 @@ import { getFirestore } from 'firebase/firestore';
  * each platform always gets one consistent set of Firebase modules.
  */
 const firebaseConfig = {
-  apiKey: 'TODO-CIVICHELPER-API-KEY',
-  authDomain: 'TODO-civichellper.firebaseapp.com',
-  projectId: 'TODO-civichellper',
-  storageBucket: 'TODO-civichellper.firebasestorage.app',
-  messagingSenderId: 'TODO',
-  appId: 'TODO',
+  apiKey: 'AIzaSyChF74aEhlGUfQWyaasXxifasIdBtm1jBE',
+  authDomain: 'civichellper.firebaseapp.com',
+  projectId: 'civichellper',
+  storageBucket: 'civichellper.firebasestorage.app',
+  messagingSenderId: '128766534259',
+  appId: '1:128766534259:web:d08284ef2f74e1ed71c006',
 };
 
 /** OAuth web client ID for the native Google Sign-In flow (not a secret). */
-export const GOOGLE_WEB_CLIENT_ID = 'TODO.apps.googleusercontent.com';
+export const GOOGLE_WEB_CLIENT_ID = '128766534259-9jpio0stcl3hkqpa5d6si9mk8vplfftq.apps.googleusercontent.com';
 
 export const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
@@ -65,6 +65,11 @@ export {
   getDoc,
   getDocs,
   onSnapshot,
-  serverTimestamp,
+  orderBy,
+  query,
   setDoc,
+  updateDoc,
+  where,
+  type DocumentData,
+  type Firestore,
 } from 'firebase/firestore';
